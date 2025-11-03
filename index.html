@@ -4,171 +4,33 @@
     <title>Érbetegek Jövőjéért Alapítvány</title>
     <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <header>
-      <div>
-        <i id="menuicon" class="fa fa-bars" onclick="operateSideBar()"></i>
-      </div>
-      <div id="headerlogodiv">
-        <img id="headerlogo" class="logo" src="images/logowithtext.jpg">
-      </div>
-      <div id="hideifsmall">
-        <button class="donatebtn">Támogasson minket!</button>
-      </div>
-      
+    <header id="header">
+      <script src="code/header.js"></script>
     </header>
 
     <nav id="sidebar" class="closed">
-      <ul>
-        <li>
-          <a class="sidebaritem" href="#">Főoldal</a>
-        </li>
-        <li>
-          <a class="sidebaritem" href="#">Rólunk</a>
-        </li>
-        <li>
-          <a class="sidebaritem" href="#">Érdekességek</a>
-        </li>
-        <li>
-          <a class="sidebaritem" href="#">Hírek</a>
-        </li>
+      <ul id="sidebarlist">
+        <script src="code/sidebar.js"></script>
       </ul>
       <div id="sidebardonatediv">
         <button id="sidebardonate" class="donatebtn"><i id="donateicon" class='fa fa-handshake-o'></i></button>
       </div>
     </nav>
 
-    <main>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-      
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-    
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla
-        lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-        class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+    <main id="main">
+      <script src="code/loremipsum.js"></script>
     </main>
 
-    <footer>
-      <hr>
-      <div id="footercontent">
-        <div id="footerlogodiv">
-          <img class="logo" src="images/logowithtext.jpg">
-        </div>
-        <div id="footercontactdiv" class="decorline">
-          <div class="footerinnerdiv">
-            <i class="fa fa-map-marker footericon"></i>
-            <div id="address">1115 Budapest, Tétényi út 12-16.</div>
-          </div>
-          <div class="footerinnerdiv">
-            <i class="fa fa-phone footericon"></i>
-            <div id="phone">+36 30 123 4567</div>
-          </div>
-          <div class="footerinnerdiv">
-            <i class="fa fa-envelope-o footericon"></i>
-            <div id="email">info@alapitvany.com</div>
-          </div>
-        </div>
-        <div id="footeraccountnumdiv" class="decorline">
-          <div class="footerinnerdiv">
-            <i class="fa fa-credit-card footericon"></i>
-            <div>Bankszámlaszám</div>
-          </div>
-          <div id="accountnum">12011351 - 02046180 - 00100004</div>
-        </div>
-        <div id="donatediv">
-          <button class="donatebtn">Támogasson minket!</button>
-        </div>
-      </div>
+    <footer id="footer">
+      <script src="code/footer.js"></script>
     </footer>
   </body>
 

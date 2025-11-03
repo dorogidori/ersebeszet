@@ -52,12 +52,7 @@ main {
     padding: 5rem 1rem 0rem 1rem;
 }
 
-/* mobile view */
-/* @media screen and (max-width: 780px) {
-
-html {
-    font-size: var(--mo-font-size);
+h1 {
+    color: var(--logo-blue);
+    text-align: center;
 }
-
-
-} */

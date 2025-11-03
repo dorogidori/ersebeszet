@@ -1,0 +1,24 @@
+{
+    "sidebaritems": [
+        {
+            "id": 0,
+            "title": "Főoldal",
+            "page": "../index.html"
+        },
+        {
+            "id": 1,
+            "title": "Rólunk",
+            "page": "../pages/about.html"
+        },
+        {
+            "id": 2,
+            "title": "Érdekességek",
+            "page": "../pages/interesting.html"
+        },
+        {
+            "id": 3,
+            "title": "Hírek",
+            "page": "../pages/news.html"
+        }
+    ]
+}
