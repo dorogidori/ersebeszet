@@ -8,7 +8,8 @@ header {
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2)
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    z-index: 3;
 }
 
 #menuicon {
@@ -16,6 +17,14 @@ header {
     color: var(--logo-blue);
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+}
+
+#menuicon:hover, #menuicon.open {
+    color: var(--logo-red);
+}
+
+#menuicon.closed{
+    color: var(--logo-blue);
 }
 
 @media screen and (max-width: 519px) {
