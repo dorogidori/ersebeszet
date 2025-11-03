@@ -101,3 +101,26 @@ hr {
 }
 
 }
+
+@media screen and (max-width: 519px) {
+    
+#footercontent {
+    display: block;
+}
+
+#footercontactdiv {
+    border: none;
+}
+
+.decorline, #donatediv {
+    width: fit-content;
+}
+
+#footerlogodiv {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+}

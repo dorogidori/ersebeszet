@@ -17,3 +17,18 @@ header {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
 }
+
+@media screen and (max-width: 519px) {
+    
+#hideifsmall {
+    display: none;
+}
+
+#headerlogodiv {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+
+}
