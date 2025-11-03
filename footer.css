@@ -112,7 +112,7 @@ hr {
     border: none;
 }
 
-.decorline, #donatediv {
+#donatediv {
     width: fit-content;
 }
 
