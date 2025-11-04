@@ -2,7 +2,7 @@ let associationInfo = {};
 
 document.addEventListener('DOMContentLoaded', () => { 
 
-fetch('./data/associationInfo.json') //TODO: külön fájlban előre beolvasni
+fetch('./data/associationInfo.json')
     .then(response => response.json())
     .then(data => {
       associationInfo = data.associationInfo;
