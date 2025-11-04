@@ -2,7 +2,7 @@ let associationInfo = {};
 
 document.addEventListener('DOMContentLoaded', () => { 
 
-fetch('../data/associationInfo.json') //TODO: külön fájlban előre beolvasni
+fetch('./data/associationInfo.json') //TODO: külön fájlban előre beolvasni
     .then(response => response.json())
     .then(data => {
       associationInfo = data.associationInfo;
@@ -31,7 +31,7 @@ function create() {
   logoDiv.id = 'footerlogodiv';
   const logoImg = document.createElement('img');
   logoImg.className = 'logo';
-  logoImg.src = '../images/logowithtext.jpg';
+  logoImg.src = './images/logowithtext.jpg';
   logoDiv.appendChild(logoImg);
 
   // --- Elérhetőségek div ---

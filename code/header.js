@@ -18,17 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 2. Logó div ---
     //   <div id="headerlogodiv">
-    //        <a href="../index.html"><img id="headerlogo" class="logo" src="images/logowithtext.jpg"></a>
+    //        <a href="./index.html"><img id="headerlogo" class="logo" src="images/logowithtext.jpg"></a>
     //   </div>
     //
   const logoDiv = document.createElement('div');
   logoDiv.id = 'headerlogodiv';
   const a = document.createElement('a');
-  a.href = '../index.html';
+  a.href = './index.html';
   const img = document.createElement('img');
   img.id = 'headerlogo';
   img.className = 'logo';
-  img.src = '../images/logowithtext.jpg';
+  img.src = './images/logowithtext.jpg';
   a.appendChild(img);
   logoDiv.appendChild(a);
 

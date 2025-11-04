@@ -3,22 +3,22 @@
         {
             "id": 0,
             "title": "Főoldal",
-            "page": "../index.html"
+            "page": "./index.html"
         },
         {
             "id": 1,
             "title": "Rólunk",
-            "page": "../pages/about.html"
+            "page": "./pages/about.html"
         },
         {
             "id": 2,
             "title": "Érdekességek",
-            "page": "../pages/interesting.html"
+            "page": "./pages/interesting.html"
         },
         {
             "id": 3,
             "title": "Hírek",
-            "page": "../pages/news.html"
+            "page": "./pages/news.html"
         }
     ]
 }

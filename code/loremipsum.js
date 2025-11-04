@@ -2,7 +2,7 @@ let lorem = "";
 
 document.addEventListener('DOMContentLoaded', () => { 
 
-fetch('../data/constants.json')
+fetch('./data/constants.json')
     .then(response => response.json())
     .then(data => {
       lorem = data.loremipsum;

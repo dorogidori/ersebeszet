@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.getElementById('sidebarlist');
 
-  fetch('../data/sidebaritems.json')
+  fetch('./data/sidebaritems.json')
     .then(response => response.json())
     .then(data => {
       data.sidebaritems.forEach(item => {
