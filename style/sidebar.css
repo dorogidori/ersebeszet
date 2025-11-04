@@ -52,6 +52,10 @@ li {
     color: var(--logo-blue);
 }
 
+.current {
+    color: var(--logo-blue);
+}
+
 #sidebardonate {
     width: 8rem;
     height: 4rem;
