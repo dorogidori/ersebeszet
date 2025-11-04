@@ -8,17 +8,17 @@
         {
             "id": 1,
             "title": "Rólunk",
-            "page": "./pages/about.html"
+            "page": "./about.html"
         },
         {
             "id": 2,
             "title": "Érdekességek",
-            "page": "./pages/interesting.html"
+            "page": "./interesting.html"
         },
         {
             "id": 3,
             "title": "Hírek",
-            "page": "./pages/news.html"
+            "page": "./news.html"
         }
     ]
 }
