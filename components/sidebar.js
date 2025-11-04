@@ -75,8 +75,8 @@ function getSideBarItems() {
         },
         {
             "id": 3,
-            "title": "Hírek",
-            "page": "./news.html"
+            "title": "Visszajelzések",
+            "page": "./feedback.html"
         }
     ];
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/pages/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -14,8 +15,10 @@
   <body>
     <script type="module">
       import { default as createPageBase } from './components/pagebase.js';
+      import { default as createlorem } from './code/loremipsum.js';
 
       createPageBase(0);
+      createlorem("mock");
     </script>
     <header id="header">
       <!-- generated -->
@@ -26,7 +29,16 @@
     </nav>
 
     <main id="main">
-      <script src="code/loremipsum.js"></script>
+      <div id="namewithslogen">
+        <div id="name">Érbetegek Jövőjéért alapívány</div>
+        <div id="slogen">Együtt az érbetegek jövőjéért!</div>
+      </div>
+      <div id="mock" class="textcontainer">
+        <!-- TODO: delete -->
+        <p class="comment">Ez a főoldal, a bal sarokban lévő ikonra menü kattintva lehet lépkedni a többi oldalra.</p>
+        <p class="comment">A fejlécben lévő logóra kattintva mindenhonnan vissza lehet jutni ide a főoldalra.</p>
+        <p class="comment">Ez csak kitöltőszöveg, nem kell érteni :)</p>
+      </div>
     </main>
 
     <footer id="footer">

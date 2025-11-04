@@ -15,8 +15,10 @@
 <body>
   <script type="module">
     import { default as createPageBase } from './components/pagebase.js';
+    import { default as createlorem } from './code/loremipsum.js';
 
     createPageBase(2);
+    createlorem("mock");
   </script>
   <header id="header">
     <!-- generated -->
@@ -27,8 +29,12 @@
   </nav>
 
   <main id="main">
-    <h1>Érdekességek</h1>
-    <script src="code/loremipsum.js"></script>
+    <div id="mock" class="textcontainer">
+      <h1>Érdekességek</h1>
+      <!-- TODO: delete -->
+      <p class="comment">Itt esetleg lehetnének közérthető leírások bizonyos érsebészeti betegségekről és/vagy érdekességekről.</p>
+      <p class="comment">Ez csak kitöltőszöveg, nem kell érteni :)</p>
+    </div>
   </main>
 
   <footer id="footer">

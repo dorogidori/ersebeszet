@@ -15,8 +15,10 @@
 <body>
   <script type="module">
     import { default as createPageBase } from './components/pagebase.js';
+    import { default as createlorem } from './code/loremipsum.js';
 
     createPageBase(3);
+    createlorem("mock");
   </script>
   <header id="header">
     <!-- generated -->
@@ -27,8 +29,16 @@
   </nav>
 
   <main id="main">
-    <h1>Hírek</h1>
-    <script src="code/loremipsum.js"></script>
+    <div id="mock" class="textcontainer">
+      <h1>Visszajelzések</h1>
+      <!-- TODO: delete -->
+      <p class="comment">Itt pedig esetleg lehetne visszajelzést/értékelést írni az ellátásról. Pl: </p>
+      <p class="comment">Marika: "Mindenki nagyon kedves volt, a műtét sikeres volt"</p>
+      <p class="comment">Józsi: "Gyors ellátás, precíz munka."</p>
+      <p class="comment">Ebből lehet statisztikát is csinálni és a főoldalon is feltüntetni, hogy x ember elégedett az ellátással, 4,9-es értékelés, y ajánlott fel pénzt stb.</p>
+      <p class="comment">Lehet moderálni is a hozzászólásokat és ami olyan, azt le lehet szedni.</p>
+      <p class="comment">Ez csak kitöltőszöveg, nem kell érteni :)</p>
+    </div>
   </main>
 
   <footer id="footer">

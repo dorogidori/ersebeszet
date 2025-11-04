@@ -27,6 +27,26 @@ header {
     color: var(--logo-blue);
 }
 
+#headerlogo {
+    margin-left: 12rem;
+}
+
+@media screen and (max-width: 710px) {
+
+#headerlogo {
+    margin-left: 6rem;
+}
+
+}
+
+@media screen and (max-width: 615px) {
+
+#headerlogo {
+    margin-left: 3rem;
+}
+
+}
+
 @media screen and (max-width: 519px) {
     
 #hideifsmall {
@@ -39,5 +59,8 @@ header {
     justify-content: center;
 }
 
+#headerlogo {
+    margin-left: 0;
+}
 
 }

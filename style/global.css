@@ -56,3 +56,19 @@ h1 {
     color: var(--logo-blue);
     text-align: center;
 }
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.3rem;
+}
+
+.textcontainer {
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+/* TODO: delete */
+.comment {
+    font-style: italic;
+    color: var(--logo-red)
+}
