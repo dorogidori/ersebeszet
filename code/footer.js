@@ -1,14 +1,21 @@
-let associationInfo = {};
+let associationInfo = {
+  "name": "Érbetegek Jövőjéért Alapítvány",
+  "address": "1115 Budapest, Tétényi út 12-16.",
+  "phone": "+36 30 123 4567",
+  "email": "info@alapitvany.com",
+  "accountnum": "12011351 - 02046180 - 00100004"
+};
 
 document.addEventListener('DOMContentLoaded', () => { 
 
-fetch('./data/associationInfo.json')
-    .then(response => response.json())
-    .then(data => {
-      associationInfo = data.associationInfo;
-      create();
-    })
-    .catch(err => console.error('Hiba a JSON beolvasásakor:', err));
+// fetch('./data/associationInfo.json')
+//     .then(response => response.json())
+//     .then(data => {
+//       associationInfo = data.associationInfo;
+//       create();
+//     })
+//     .catch(err => console.error('Hiba a JSON beolvasásakor:', err));
+create();
 })
 
 function create() {
