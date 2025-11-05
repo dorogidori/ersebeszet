@@ -1,4 +1,4 @@
-import {displayDonateButton} from './global.js';
+import {displayDonateButton, preventFromClick} from './global.js';
 import { readFromJSON } from '../code/readfromjson.js';
 
 export default async function createSideBar(pageId) {
@@ -10,10 +10,11 @@ export default async function createSideBar(pageId) {
   // donate button
   const donateDiv = displayDonateButton('sidebardonatediv');
   const donateBtn = donateDiv.querySelector('button');
+  const donateLink = donateDiv.querySelector('a');
   const donateIcon = displayDonateIcon();
   donateBtn.id = 'sidebardonate';
-  donateBtn.textContent = null;
-  donateBtn.appendChild(donateIcon);
+  donateLink.textContent = null;
+  donateLink.appendChild(donateIcon);
   sidebar.appendChild(donateDiv);
 }
 
@@ -34,10 +35,10 @@ async function displayMenuList(pageId) {
         }
         a.href = item.page;
         a.textContent = item.title;
-        a.removeEventListener("click", _preventFromClick);
+        a.removeEventListener("click", preventFromClick);
         if(item.id == pageId) {
             a.classList.add('current');
-            a.addEventListener("click", _preventFromClick);
+            a.addEventListener("click", preventFromClick);
         }
         li.appendChild(a);
         menuUl.appendChild(li);
@@ -53,8 +54,4 @@ function displayDonateIcon() {
     donateIcon.classList.add('fa-handshake-o');
 
     return donateIcon;
-}
-
-function _preventFromClick(event) {
-    event.preventDefault();
 }

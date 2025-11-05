@@ -13,5 +13,7 @@ export default function createlorem(elemId) {
     });
 
     const size = document.getElementById("size");
-    size.textContent = `${window.innerWidth} x ${window.innerHeight}`;
+    if(size != null) {
+        size.textContent = `${window.innerWidth} x ${window.innerHeight}`;
+    }
 }

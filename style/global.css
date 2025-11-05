@@ -39,6 +39,10 @@ body {
 .donatebtn:hover {
     font-size: 1.3rem;
 }
+.donatebtn > a {
+    text-decoration: none;
+    color: white;
+}
 
 main {
     margin: 0;

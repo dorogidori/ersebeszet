@@ -1,4 +1,4 @@
-import {displayLogoWithText, displayDonateButton} from './global.js';
+import {displayLogoWithText, displayDonateButton, preventFromClick} from './global.js';
 
 export default function createHeader() {
     const header = document.getElementById('header');
@@ -10,10 +10,18 @@ export default function createHeader() {
     const logoImg = displayLogoWithText('headerlogo');
     const logoDiv = document.createElement('div');
     logoDiv.id = 'headerlogodiv';
-    const a = document.createElement('a');
-    a.href = './index.html';
-    a.appendChild(logoImg);
-    logoDiv.appendChild(a);
+    const logoLink = document.createElement('a');
+    logoLink.href = './index.html';
+    logoLink.appendChild(logoImg);
+
+    const page = window.location.pathname.match(/[^\/]+$/)[0];
+
+    logoLink.removeEventListener("click", preventFromClick);
+    if (page == "index.html") {
+        logoLink.addEventListener("click", preventFromClick);
+    }
+
+    logoDiv.appendChild(logoLink);
     header.appendChild(logoDiv);
     // donate button
     const donateDiv = displayDonateButton('hideifsmall');

@@ -21,9 +21,25 @@ export function displayDonateButton(id) {
 
   const donateBtn = document.createElement('button');
   donateBtn.classList.add('donatebtn');
-  donateBtn.textContent = 'Támogasson minket!';
+
+  const donateLink = document.createElement('a');
+  donateLink.textContent = 'Támogasson minket!';
+  donateLink.href = './donate.html';
+
+  const page = window.location.pathname.match(/[^\/]+$/)[0];
+
+  donateLink.removeEventListener("click", preventFromClick);
+  if (page == "donate.html") {
+    donateLink.addEventListener("click", preventFromClick);
+  }
+
+  donateBtn.appendChild(donateLink);
 
   donateDiv.appendChild(donateBtn);
 
   return donateDiv;
+}
+
+export function preventFromClick(event) {
+    event.preventDefault();
 }
