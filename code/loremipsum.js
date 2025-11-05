@@ -11,4 +11,7 @@ export default function createlorem(elemId) {
             main.appendChild(p);
         }
     });
+
+    const size = document.getElementById("size");
+    size.textContent = `${window.innerWidth} x ${window.innerHeight}`;
 }

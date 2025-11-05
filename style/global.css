@@ -72,3 +72,10 @@ p {
     font-style: italic;
     color: var(--logo-red)
 }
+
+@media screen and (max-width: 800px) {
+    
+.textcontainer {
+    margin: 2rem 1.5rem 2rem 1.5rem;
+}
+}

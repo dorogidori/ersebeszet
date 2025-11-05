@@ -6,6 +6,8 @@
 #name {
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin: auto;
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -15,7 +17,20 @@
 #slogen {
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin: auto;
     font-size: 2.5rem;
     font-style: italic;
     color: var(--logo-red)
+}
+
+@media screen and (max-width: 800px) {
+
+#name {
+    font-size: 2.6rem;
+}
+
+#slogen {
+    font-size: 1.8rem;
+}
 }
