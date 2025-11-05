@@ -21,7 +21,8 @@ async function displayMenuList(pageId) {
     const menuUl = document.createElement('ul');
     menuUl.id = 'sidebarlist';
 
-    const data = await readFromJSON('../data/sidebaritems.json');
+    const url = new URL('../data/sidebaritems.json', import.meta.url);
+    const data = await readFromJSON(url);
     const sidebaritems = data.sidebaritems;
 
     sidebaritems.forEach(item => {

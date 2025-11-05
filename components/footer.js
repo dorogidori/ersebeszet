@@ -52,7 +52,8 @@ async function displayContactInfo() {
     contactDiv.id = 'footercontactdiv';
     contactDiv.classList.add('decorline');
 
-    const data =  await readFromJSON('../data/associationinfo.json');
+    const url = new URL('../data/associationinfo.json', import.meta.url);
+    const data =  await readFromJSON(url);
     const associationInfo = data.associationInfo;
 
     const contactItems = [
@@ -113,7 +114,8 @@ async function displayAccountNumber() {
     const accountNum = document.createElement('div');
     accountNum.id = 'accountnum';
 
-    const data =  await readFromJSON('../data/associationinfo.json');
+    const url = new URL('../data/associationinfo.json', import.meta.url);
+    const data =  await readFromJSON(url);
     const associationInfo = data.associationInfo;
     accountNum.textContent = associationInfo.accountnum;
 
