@@ -1,9 +1,10 @@
 import {displayDonateButton} from './global.js';
+import { readFromJSON } from '../code/readfromjson.js';
 
-export default function createSideBar(pageId) {
+export default async function createSideBar(pageId) {
   const sidebar = document.getElementById('sidebar');
 
-  const menuList = displayMenuList(pageId);
+  const menuList = await displayMenuList(pageId);
   sidebar.appendChild(menuList);
 
   // donate button
@@ -16,11 +17,13 @@ export default function createSideBar(pageId) {
   sidebar.appendChild(donateDiv);
 }
 
-function displayMenuList(pageId) {
+async function displayMenuList(pageId) {
     const menuUl = document.createElement('ul');
     menuUl.id = 'sidebarlist';
 
-    const sidebaritems = getSideBarItems();
+    const data = await readFromJSON('../data/sidebaritems.json');
+    const sidebaritems = data.sidebaritems;
+
     sidebaritems.forEach(item => {
         const li = document.createElement('li');
         const a = document.createElement('a');
@@ -53,32 +56,4 @@ function displayDonateIcon() {
 
 function _preventFromClick(event) {
     event.preventDefault();
-}
-
-
-function getSideBarItems() {
-    const sidebaritems = [
-        {
-            "id": 0,
-            "title": "Főoldal",
-            "page": "./index.html"
-        },
-        {
-            "id": 1,
-            "title": "Rólunk",
-            "page": "./about.html"
-        },
-        {
-            "id": 2,
-            "title": "Érdekességek",
-            "page": "./interesting.html"
-        },
-        {
-            "id": 3,
-            "title": "Visszajelzések",
-            "page": "./feedback.html"
-        }
-    ];
-
-    return sidebaritems;
 }

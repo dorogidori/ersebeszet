@@ -1,6 +1,7 @@
-import {displayLogoWithText, displayDonateButton} from './global.js';
+import { displayLogoWithText, displayDonateButton } from './global.js';
+import { readFromJSON } from '../code/readfromjson.js';
 
-export default function createFooter() {
+export default async function createFooter() {
   const footer = document.getElementById('footer');
 
   // --- Vízszintes elválasztó ---
@@ -18,10 +19,10 @@ export default function createFooter() {
   logoDiv.appendChild(logoImg);
   footerContent.appendChild(logoDiv);
   // contact info
-  const contactDiv = displayContactInfo();
+  const contactDiv = await displayContactInfo();
   footerContent.appendChild(contactDiv);
   // account number
-  const accountDiv = displayAccountNumber();
+  const accountDiv = await displayAccountNumber();
   footerContent.appendChild(accountDiv);
   // donate button
   const donateDiv = displayDonateButton('donatediv');
@@ -46,12 +47,13 @@ export default function createFooter() {
   //     </div>
   // </div>
   //
-function displayContactInfo() {
+async function displayContactInfo() {
     const contactDiv = document.createElement('div');
     contactDiv.id = 'footercontactdiv';
     contactDiv.classList.add('decorline');
 
-    const associationInfo = getAssociationInfo();
+    const data =  await readFromJSON('../data/associationinfo.json');
+    const associationInfo = data.associationInfo;
 
     const contactItems = [
         { icon: 'fa-map-marker', text: associationInfo.address, id: 'address' },
@@ -89,7 +91,7 @@ function displayContactInfo() {
   //     <div id="accountnum">12011351 - 02046180 - 00100004</div>
   // </div>
   //
-function displayAccountNumber() {
+async function displayAccountNumber() {
     const accountDiv = document.createElement('div');
     accountDiv.id = 'footeraccountnumdiv';
     accountDiv.classList.add('decorline');
@@ -110,23 +112,13 @@ function displayAccountNumber() {
 
     const accountNum = document.createElement('div');
     accountNum.id = 'accountnum';
-    const associationinfo = getAssociationInfo();
-    accountNum.textContent = associationinfo.accountnum;
+
+    const data =  await readFromJSON('../data/associationinfo.json');
+    const associationInfo = data.associationInfo;
+    accountNum.textContent = associationInfo.accountnum;
 
     accountDiv.appendChild(accountInner);
     accountDiv.appendChild(accountNum);
 
     return accountDiv;
-}
-
-function getAssociationInfo() {
-    let associationInfo = {
-        "name": "Érbetegek Jövőjéért Alapítvány",
-        "address": "1115 Budapest, Tétényi út 12-16.",
-        "phone": "+36 30 123 4567",
-        "email": "info@alapitvany.com",
-        "accountnum": "12011351 - 02046180 - 00100004"
-    };
-
-    return associationInfo;
 }
