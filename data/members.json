@@ -1,0 +1,39 @@
+{
+    "members": [
+        {
+            "name": "Dr. Teszt Elek",
+            "title": "Elnök",
+            "photo": "../images/maledoctor.png"
+        },
+        {
+            "name": "Dr. Prób Anna",
+            "title": "Alelnök",
+            "photo": "../images/femaledoctor.png"
+        },
+        {
+            "name": "Dr. Teszt Elek",
+            "title": "Kuratóriumi tag",
+            "photo": "../images/maledoctor.png"
+        },
+        {
+            "name": "Dr. Teszt Elek",
+            "title": "Kuratóriumi tag",
+            "photo": "../images/maledoctor.png"
+        },
+        {
+            "name": "Dr. Prób Anna",
+            "title": "Kuratóriumi tag",
+            "photo": "../images/femaledoctor.png"
+        },
+        {
+            "name": "Dr. Nagy-Hosszúnevű Helga Annamária",
+            "title": "Kuratóriumi tag",
+            "photo": "../images/femaledoctor.png"
+        },
+        {
+            "name": "Dr. Teszt Elek",
+            "title": "Kuratóriumi tag",
+            "photo": "../images/maledoctor.png"
+        }
+    ]
+}
