@@ -14,10 +14,11 @@ export default function createHeader() {
     logoLink.href = './index.html';
     logoLink.appendChild(logoImg);
 
-    const page = window.location.pathname.match(/[^\/]+$/)[0];
+    const path = window.location.pathname.match(/[^\/]+$/);
+    let page = path == null ? null : path[0];
 
     logoLink.removeEventListener("click", preventFromClick);
-    if (page == "index.html") {
+    if (page == "index.html" || page == null) {
         logoLink.addEventListener("click", preventFromClick);
     }
 

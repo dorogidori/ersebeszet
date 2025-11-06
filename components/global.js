@@ -26,7 +26,8 @@ export function displayDonateButton(id) {
   donateLink.textContent = 'Támogasson minket!';
   donateLink.href = './donate.html';
 
-  const page = window.location.pathname.match(/[^\/]+$/)[0];
+  const path = window.location.pathname.match(/[^\/]+$/);
+  let page = path == null ? null : path[0];
 
   donateLink.removeEventListener("click", preventFromClick);
   if (page == "donate.html") {

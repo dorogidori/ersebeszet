@@ -1,0 +1,64 @@
+{
+  "feedbacks": [
+    {
+      "rating": 5,
+      "feedback": "Nagyon kedves és profi volt mindenki, a műtét után gyorsan felépültem. Külön köszönet az orvosnak és a nővéreknek!",
+      "name": "Marika",
+      "display": true
+    },
+    {
+      "rating": 4,
+      "feedback": "Minden rendben ment, egyedül a várakozási idő volt hosszabb a vártnál.",
+      "name": "Tamás",
+      "display": true
+    },
+    {
+      "rating": 5,
+      "feedback": "",
+      "name": "Katalin",
+      "display": false
+    },
+    {
+      "rating": 3,
+      "feedback": "A kezelés jó volt, de a tájékoztatás lehetett volna részletesebb.",
+      "name": "",
+      "display": true
+    },
+    {
+      "rating": 5,
+      "feedback": "Szuper ellátás, modern környezet, emberi hozzáállás!",
+      "name": "István",
+      "display": true
+    },
+    {
+      "rating": 4,
+      "feedback": "",
+      "name": "",
+      "display": false
+    },
+    {
+      "rating": 4,
+      "feedback": "A műtét utáni kontrollnál kicsit nehéz volt időpontot kapni, de végül minden rendben lezajlott.",
+      "name": "Zsófi",
+      "display": true
+    },
+    {
+      "rating": 5,
+      "feedback": "Nagyon hálás vagyok a figyelmességért és a gondos ellátásért. Ritka az ilyen odafigyelés!",
+      "name": "Ferenc",
+      "display": true
+    },
+    {
+      "rating": 4,
+      "feedback": "",
+      "name": "Anna",
+      "display": false
+    },
+    {
+      "rating": 5,
+      "feedback": "Gyors ellátás, minden kérdésemre választ kaptam. Csak ajánlani tudom a csapatot!",
+      "name": "",
+      "display": true
+    }
+  ]
+}
