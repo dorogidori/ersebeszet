@@ -1,0 +1,77 @@
+#feedbackcarusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+#caruselcontent {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: fit-content;
+    margin: auto 2rem;
+}
+
+#previcon, #nexticon {
+    font-size: 3rem;
+    color: lightgray;
+    opacity: 0.5;
+}
+
+#nexticon {
+    margin-left: 4rem;
+}
+
+#previcon:hover, #nexticon:hover {
+    opacity: 0.8;
+}
+
+#patienticon {
+    font-size: 8rem;
+    color: var(--logo-red);
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+#speechbubble {
+    width: 40rem;
+    height: 21rem;
+    border-radius: 16rem 16rem 16rem 0rem;
+    box-shadow: 40px 60px 20px 0 rgba(0,0,0,0.2);
+    background-color: rgb(244, 243, 243);
+    margin-bottom: 6rem;
+    padding: 2rem;
+}
+
+.ratingdiv {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.ratingdiv > i {
+    font-size: 2rem;
+    color: var(--logo-red);
+}
+
+#feedbackdiv {
+    height: 12rem;
+    display: flex;
+    align-items: center;
+}
+
+#feedbacktxt {
+    font-size: 1.6rem;
+    font-style: italic;
+    width: fit-content;
+    margin: auto;
+    color: var(--logo-red);
+}
+
+#patientname {
+    font-size: 1.5rem;
+    color: var(--logo-red);
+    margin-top: 2rem;
+}

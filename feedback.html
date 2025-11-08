@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/footer.css">
   <link rel="stylesheet" href="./style/sidebar.css">
+  <link rel="stylesheet" href="./style/pages/feedback.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -15,10 +16,10 @@
 <body>
   <script type="module">
     import { default as createPageBase } from './components/pagebase.js';
-    import { default as createlorem } from './code/loremipsum.js';
+    import { createFeedbackCarusel } from './components/feedbackcarusel.js';
 
     createPageBase(3);
-    createlorem("mock");
+    createFeedbackCarusel();
   </script>
   <header id="header">
     <!-- generated -->
@@ -32,12 +33,13 @@
     <div id="mock" class="textcontainer">
       <h1>Visszajelzések</h1>
       <!-- TODO: delete -->
-      <p class="comment">Itt pedig esetleg lehetne visszajelzést/értékelést írni az ellátásról. Pl: </p>
-      <p class="comment">Marika: "Mindenki nagyon kedves volt, a műtét sikeres volt"</p>
-      <p class="comment">Józsi: "Gyors ellátás, precíz munka."</p>
-      <p class="comment">Ebből lehet statisztikát is csinálni és a főoldalon is feltüntetni, hogy x ember elégedett az ellátással, 4,9-es értékelés, y ajánlott fel pénzt stb.</p>
-      <p class="comment">Lehet moderálni is a hozzászólásokat és ami olyan, azt le lehet szedni.</p>
-      <p class="comment">Ez csak kitöltőszöveg, nem kell érteni :)</p>
+      <p class="comment">Itt pedig esetleg lehetne visszajelzést/értékelést írni az ellátásról.</p>
+      <p class="comment">Ebből lehet statisztikát is csinálni és itt a lap tetején is meg a főoldalon is feltüntetni, hogy hány ember írt értékelést és mennyi az összesített értékelés</p>
+      <p class="comment">A beküldött értékelések amikhez tartozik szöveg is, így megjelennének alul váltakozva.</p>
+      <p class="comment">A méretezés itt még nem jó telefonra, csak gépre!</p>
+      <div id="feedbackcarusel">
+        <!-- generated -->
+      </div>
     </div>
   </main>
 
